@@ -1,0 +1,82 @@
+<!-- Data is coming form service -->
+
+<div [ngClass]="'container-fluid'">
+    <div [ngClass]="'row bg-secondary'">
+        <div [ngClass]="'card-group'">
+            <div *ngFor="let item of productList">
+                <div [ngClass]="'card m-4 border-dark border-2'" [ngStyle]="{'max-width':'20rem'}">
+                    <img [ngClass]="'card-img-top'" src="{{item.img}}" alt="Card image cap">
+                    <!-- src = "{{item.img}}" or [src] = 'item.img' -->
+                    <div [ngClass]="'card-body'">
+                        <h5 [ngClass]="'card-title'">{{item.id}}</h5>
+                        <h6>{{item.title}}</h6>
+                        <hr>
+                        <p [ngClass]="'card-text'">{{item.details}}</p>
+                    </div>
+                    <div class="card-footer text-center ">
+                        <a href="#" [ngClass]="'btn btn-success  col-sm-8'"><b>Add to Cart</b></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Static data -->
+
+<!--<div [ngClass]="'container-fluid'">
+    <div [ngClass]="'row bg-secondary'">
+        <div [ngClass]="'card-group'">
+            <div [ngClass]="'card m-4'" >
+                <img [ngClass]="'card-img-top'"  src="/assets/img.jpeg" alt="Card image cap">
+                <div [ngClass]="'card-body'">
+                    <h5 [ngClass]="'card-title'">Product 1</h5>
+                    <h6>Rs.1000</h6>
+                    <p [ngClass]="'card-text'">Some quick example text to build on the Product  and make up the bulk of the
+                        card's content.</p>
+                    <a href="#" [ngClass]="'btn btn-success  col-sm-8'"><b>Add to Cart</b></a>
+                </div>
+            </div>
+            <div [ngClass]="'card m-4'" >
+                <img [ngClass]="'card-img-top'"  src="/assets/img.jpeg" alt="Card image cap">
+                <div [ngClass]="'card-body'">
+                    <h5 [ngClass]="'card-title'">Product 2</h5>
+                    <h6>Rs.1000</h6>
+                    <p [ngClass]="'card-text'">Some quick example text to build on the Product  and make up the bulk of the
+                        card's content.</p>
+                    <a href="#" [ngClass]="'btn btn-success  col-sm-8'"><b>Add to Cart</b></a>
+                </div>
+            </div>
+            <div [ngClass]="'card m-4'" >
+                <img [ngClass]="'card-img-top'"  src="/assets/img.jpeg" alt="Card image cap">
+                <div [ngClass]="'card-body'">
+                    <h5 [ngClass]="'card-title'">Product 3</h5>
+                    <h6>Rs.1000</h6>
+                    <p [ngClass]="'card-text'">Some quick example text to build on the Product  and make up the bulk of the
+                        card's content.</p>
+                    <a href="#" [ngClass]="'btn btn-success  col-sm-8'"><b>Add to Cart</b></a>
+                </div>
+            </div>
+            <div [ngClass]="'card m-4'" >
+                <img [ngClass]="'card-img-top'"  src="/assets/img.jpeg" alt="Card image cap">
+                <div [ngClass]="'card-body'">
+                    <h5 [ngClass]="'card-title'">Product 4</h5>
+                    <h6>Rs.1000</h6>
+                    <p [ngClass]="'card-text'">Some quick example text to build on the Product  and make up the bulk of the
+                        card's content.</p>
+                    <a href="#" [ngClass]="'btn btn-success  col-sm-8'"><b>Add to Cart</b></a>
+                </div>
+            </div>
+            <div [ngClass]="'card m-4'" >
+                <img [ngClass]="'card-img-top'"  src="/assets/img.jpeg" alt="Card image cap">
+                <div [ngClass]="'card-body'">
+                    <h5 [ngClass]="'card-title'">Product 5</h5>
+                    <h6>Rs.1000</h6>
+                    <p [ngClass]="'card-text'">Some quick example text to build on the Product  and make up the bulk of the
+                        cards content.</p>
+                    <a href="#" [ngClass]="'btn btn-success  col-sm-8'"><b>Add to Cart</b></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div> -->

@@ -1,0 +1,27 @@
+<div class="container-fluid">
+  <div [ngClass]="'row'">
+    <div [ngClass]="'col-sm-12 bg-secondary '" >
+      <p [ngClass]="'text-size'">Here is something</p>
+    </div>
+  </div>
+</div>
+<div [ngClass]="'container-fluid'">
+    <div [ngClass]="'row'">
+        <div [ngClass]="'col-sm-12 ng-dark p-2'">            
+            <nav [ngClass]="'navbar navbar-expand-lg navbar-light bg-warning bg-opacity-75'">
+                <div [ngClass]="'col-sm-8 col-12'">
+                  <a [ngClass]="'nav-item btn col-sm-2 text-black'" routerLink="/home"><b>Home</b></a>
+                  <a [ngClass]="'nav-item btn col-sm-2 text-black'" routerLink="/products"><b>Products</b></a>
+                  <a [ngClass]="'nav-item btn col-sm-2 text-black'" routerLink="/contact-us"><b>Contact us</b></a>
+                  <a [ngClass]="'nav-item btn col-sm-2 text-black'" routerLink="/check-out"><b>Check-out</b></a>
+                </div>
+                <div [ngClass]="'col-sm-4 col-12 d-flex justify-content-end'">
+                  <input type="search" [ngClass]="'nav-item text-info col-sm-3 form-control'" placeholder="Search" name="" id="">
+                  <button [ngClass]="'nav-item btn btn-success col-sm-2'">Search</button>&nbsp;
+                  <a [ngClass]="'nav-item btn col-sm-2 text-black '" routerLink="/profile/login"><b>Sign-in</b></a>&nbsp;
+                  <button [ngClass]="'nav-item btn col-sm-2 text-black  dropdown-toggle'" routerLink="/manager"><b>Manager</b></button>
+                </div>
+            </nav>
+        </div>
+    </div>
+</div>

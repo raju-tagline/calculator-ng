@@ -1,0 +1,27 @@
+
+<div [ngClass]="'container-fluid'">
+<p>footer works!</p>
+<div [ngClass]="'row bg-secondary text-light'">
+    <!-- [ngStyle]="{'height':'725px'}" -->
+    <div [ngClass]="'col-sm-12'">
+        <!-- <div [ngClass]="container-fluid d-flex flex-column">
+    <div [ngClass]="row d-flex align-content-end">
+        <div [ngClass]="col-sm-12 bg-secondary">
+            <p [ng[ngClass]]="'text-info text-end'">@Copyright 2022</p>
+        </div>
+    </div>
+    </div> -->
+        <input type="text" [(ngModel)]="title" [ngClass]="'text-success mt-3 col-sm-2 border-primary rounded'">
+        <p>Here is your Two way binding :>> {{title}}</p>
+    </div>
+    <div *ngIf="!switch">
+        <div [ngSwitch]="value">
+            <p *ngSwitchCase="5">5</p>
+            <p *ngSwitchCase="10">10</p>
+            <p *ngSwitchCase="15">15</p>
+            <p *ngSwitchDefault>default</p>
+        </div>
+    </div>
+
+</div>
+</div>
